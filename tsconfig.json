@@ -1,6 +1,88 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
-  }
+    "strict": true,
+    "types": [
+      "jest",
+      "@types/styled-components-react-native"
+    ],
+    "baseUrl": "./src",
+    "paths": {
+      "@assets": [
+        "../assets/images"
+      ],
+      "@contexts": [
+        "contexts/*"
+      ],
+      "@contexts/*": [
+        "contexts/*"
+      ],
+      "@services": [
+        "services"
+      ],
+      "@services/*": [
+        "services/*"
+      ],
+      "@screens": [
+        "screens"
+      ],
+      "@screens/*": [
+        "screens/*"
+      ],
+      "@theme": [
+        "theme"
+      ],
+      "@constants": [
+        "theme/constants"
+      ],
+      "@constants/*": [
+        "theme/constants"
+      ],
+      "@hooks": [
+        "theme/hooks"
+      ],
+      "@hooks/*": [
+        "theme/hooks/*"
+      ],
+      "@utils": [
+        "theme/utils"
+      ],
+      "@utils/*": [
+        "theme/utils/*"
+      ],
+      "@atoms": [
+        "theme/components/atoms"
+      ],
+      "@atoms/*": [
+        "theme/components/atoms/*"
+      ],
+      "@molecules": [
+        "theme/components/molecules"
+      ],
+      "@molecules/*": [
+        "theme/components/molecules/*"
+      ],
+      "@organisms": [
+        "theme/components/organisms"
+      ],
+      "@organisms/*": [
+        "theme/components/organisms/*"
+      ],
+      "@templates": [
+        "theme/components/templates"
+      ],
+      "@templates/*": [
+        "theme/components/templates/*"
+      ]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }

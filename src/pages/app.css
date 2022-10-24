@@ -1,0 +1,7 @@
+html {
+    background: #000000;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}

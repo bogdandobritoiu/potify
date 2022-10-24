@@ -1,0 +1,1 @@
+export {withProfiler} from '@sentry/react-native'
